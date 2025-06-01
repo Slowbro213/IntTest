@@ -1,0 +1,256 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+.page-wrapper {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  background: #fcd1a7 url('./images/hero.jpg') no-repeat center;
+  background-size: 151%;
+  background-position: 32.75% 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 6rem 2rem;
+  height: 100vh;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 42%;
+  z-index: 1;
+  color: #fff;
+  text-align: right;
+  margin-right: 3.5rem;
+  margin-bottom: 9rem;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.hero-button {
+  padding: 0.65rem 2.5rem;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Carousel Section */
+.carousel-wrapper {
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.slick-list {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.slick-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 607px;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-decoration: none;
+  color: inherit;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 577px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+.carousel-text {
+  margin-top: 1rem;
+}
+
+.carousel-text p {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.5;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 2rem;
+  user-select: none;
+}
+
+
+/* Featured Products Section */
+.featured-products {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000;
+  width: 100%;
+  text-decoration: none;
+}
+
+.product-image {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.product-text {
+  margin-top: 1rem;
+}
+
+.product-text p {
+  text-transform: uppercase;
+  color: #000;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 4rem 1rem;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
+  .hero-content {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-button {
+    font-size: 16px;
+  }
+  .carousel-item {
+    width: 400px;
+  }
+  .carousel-image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .carousel-item {
+    width: 300px;
+    margin: 0 0.5rem;
+  }
+  .carousel-image {
+    height: 300px;
+  }
+  .product-image {
+    height: 200px;
+  }
+  .product-grid {
+    font-size: 16px;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  .hero-button {
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+  }
+  .carousel-item {
+    width: 250px;
+  }
+  .carousel-image {
+    height: 250px;
+  }
+  .product-image {
+    height: 150px;
+  }
+  .section-title {
+    font-size: 1.2rem;
+  }
+  .product-grid {
+    gap: 1rem;
+  }
+}
