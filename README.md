@@ -2,6 +2,10 @@
 
 This project is a frontend implementation challenge completed as part of an internship application. The task was to replicate a Figma-based design into a fully functional, responsive webpage using **pure HTML, CSS, and JavaScript**—with an emphasis on a smooth, looping product **carousel** and responsive layout for desktop and mobile.
 
+## 🎨 Live Demo 
+
+You can view the live demo of the carousel on [GitHub Pages](https://slowbro213.github.io/IntTest/).
+
 
 ## 📸 Features
 
